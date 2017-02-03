@@ -1,10 +1,37 @@
 package youDoIt;
-
+import java.util.Scanner;
 public class CreateSpaServices {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args) 
+	{
+		String service;
+		double price;
+		
+		SpaService firstService = new SpaService();
+		SpaService secondService = new SpaService();
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Enter service >> ");
+		service = keyboard.nextLine();
+		System.out.println("Enter price >> ");
+		price = keyboard.nextDouble();
+		
+		firstService.setServiceDescription(service);
+		firstService.setPrice(price);
+		
+		keyboard.nextLine();
+		System.out.println("Enter service >> ");
+		service = keyboard.nextLine();
+		System.out.println("Enter price >> ");
+		price = keyboard.nextDouble();
+		secondService.setServiceDescription(service);
+		secondService.setPrice(price);
+		
+		System.out.println("First service destails:");
+			System.out.println(firstService.getServiceDescription() + " $" + firstService.getPrice());
+			
+		System.out.println("Second service destails:");
+			System.out.println(secondService.getServiceDescription() + " $" + secondService.getPrice());
 	}
 
 }
