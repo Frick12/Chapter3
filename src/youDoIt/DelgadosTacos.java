@@ -102,7 +102,7 @@ public class DelgadosTacos
 		System.out.println("You ordered " + tacoOrdered + " tacos, " + burritoOrdered + " burritos, " + 
 				churroOrdered + " \nchurros, " + chimichangaOrdered + " chimichangas, " + 
 				enchiladasOrdered + " enchiladas, " + tamalesOrdered + " \ntamales, " + fajitaOrdered + " fajitas, "
-				+ tacoSaladOrdered + " Taco Salads, " + "\n" + waterOrdered + " waters " +  popOrdered + " pops, for a total of $" + totalPrice);
+				+ tacoSaladOrdered + " Taco Salads, " + "\n" + waterOrdered + " waters " +  popOrdered + " pops, for a total of $" + (df.format(totalPrice)));
 		
 		totalPriceWithTax = totalPrice * 1.075;
 		
