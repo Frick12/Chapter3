@@ -1,20 +1,20 @@
 package youDoIt;
 
-import java.util.Scanner;
-import java.text.DecimalFormat;
+import java.util.Scanner; //imports the ability to use a scanner class
+import java.text.DecimalFormat; //imports the ability to change decimal format
 public class DelgadosTacos 
 {
 
-	private static Scanner inputDevice;
+	private static Scanner inputDevice; //creates the scanner for use
 	public static void main(String[] args) 
 	{
-		tacoTruck();
-		menu();
+		tacoTruck(); //This presents the tacoTruck method
+		menu(); //This presents the menu method
 	}
 	
 	public static void menu()
 	{
-		String burrito, churro, chimichanga, tamales, tacoSalad, fajita, taco, enchiladas, pop, water;
+		String burrito, churro, chimichanga, tamales, tacoSalad, fajita, taco, enchiladas, pop, water; //All if the insertable values
 		double tacoPrice = 2.99;
 		double burritoPrice = 1.99;
 		double churroPrice = .99;
@@ -38,7 +38,7 @@ public class DelgadosTacos
 		double totalPrice;
 		double totalPriceWithTax;
 		
-		DecimalFormat df = new DecimalFormat("0.00");
+		DecimalFormat df = new DecimalFormat("0.00"); //Changes the decimal format
 		
 		System.out.println("****************************");
 		System.out.println("     Tacos Price - 2.99     ");
@@ -53,7 +53,7 @@ public class DelgadosTacos
 		System.out.println("     Water Price - 0.25     ");
 		System.out.println("****************************");
 		
-		inputDevice = new Scanner(System.in);
+		inputDevice = new Scanner(System.in); //creates the new scanner
 		
 		System.out.println("How many Tacos do you want? >> ");
 		tacoOrdered = inputDevice.nextDouble();
